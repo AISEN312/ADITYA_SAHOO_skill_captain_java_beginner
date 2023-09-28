@@ -1,0 +1,66 @@
+(Whitelabel Error Page
+This application has no explicit mapping for /error, so you are seeing this as a fallback.
+
+Fri Sep 29 01:02:17 IST 2023
+There was an unexpected error (type=Not Found, status=404).)
+
+~~~~I am getting this in my local browser~~~~
+
+
+
+
+At first, i did get 'Hello world'in my local browser by following the steps in concept section.But in the Assignment , the tasks (
+1. Create a new endpoint `/greet/{name}` that accepts a path parameter representing a person's name and returns a personalized greeting. For example, a request to `/greet/John` should return "Hello, John!".
+2. Implement error handling for invalid or empty name values. Return an appropriate error message and status code when the name parameter is missing or blank.
+3. Add a new endpoint `/greet/{name}/{language}` that accepts both name and language parameters. Return a greeting message based on the specified language. For example, `/greet/John/es` should return "Hola, John!" for Spanish.
+4. Implement support for handling HTTP POST requests. Create an endpoint `/greet` that accepts a JSON payload with a name field and returns a greeting message. Test this endpoint using tools like cURL or Postman.
+5. Add unit tests to verify the behavior of the new endpoints. Write test cases to cover different scenarios, including valid and invalid inputs.
+) 
+which was assigned to me ,i didn't fully grasp it, and so i was not able to do any further modifications by my own.
+Though i was trying to take help from resources, i am getting syntax error in my code (both in main and tests).
+In cmd, i was getting BUILD : FAILURE whenever i tried to write/add/modify some code on my own in @rest controller,@getmapping,
+@postmapping,@tests.
+
+
+
+
+{IN POSTMAN, I WAS GETTING THIS,
+ On POST
+{
+    "timestamp": "2023-09-28T19:44:24.105+00:00",
+    "status": 404,
+    "error": "Not Found",
+    "path": "/"
+}
+
+On GET 
+GET http://localhost:8080/
+ 
+POST http://localhost:8080/
+404
+145 ms
+Network
+agent: "Desktop Agent"
+addresses: {…}
+Request Headers
+User-Agent: PostmanRuntime/7.33.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 60607bf7-df83-4900-a875-348e822723fa
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 0
+Response Headers
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Thu, 28 Sep 2023 19:44:24 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+Response Body}
+
+It would be helpful if complete  sample solution folder is provided..Also ,i wanted to know step procedure 
+to do the task in postman,how to convert 404 error to 200,...
